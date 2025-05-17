@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRWEB</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+ .connect-section {
+    
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  .connect-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    
+  }
+
+  .connect-heading::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: #f0b943;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #f0b943;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+    .me::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #f0b943;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+  .connect-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    animation: slideUp 1.2s ease forwards;
+  }
+
+  .connect-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    width: 140px;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+
+  .connect-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+    filter: invert(100%);
+  }
+
+  .connect-item span {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+
+  .connect-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    background-color: #222;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(60px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .connect-item {
+      width: 100px;
+      padding: 15px;
+    }
+
+    .connect-item img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .connect-heading {
+      font-size: 2rem;
+    }
+   
+  
+  }
+</style>
+</head>
+<body>
+    <div class="bgAnimation " style="width:100% ; height:100%;" id="bgAnimation">
+        <div class="backgroundAmim">
+            
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <h1><span>Kriti </span>Portfolio</h1>
+            <ul>
+                <li href="index.html">Home</li>
+                <li onclick="document.getElementById('About').scrollIntoView({ behavior: 'smooth' });">About</li>
+                <li onclick="document.getElementById('connect').scrollIntoView({ behavior: 'smooth' });">Connect</li>
+                <li onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });" >Projects</li>
+                <li onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="textBox" id="About">
+                
+                <p >Hi,My name is <span>Kriti</span> <br>and I am a passionate <br>Web Developer</p>
+                <div class="button1">
+                <button class="homeBtn" style="--i:#fff;"  onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });" >Projects</button>
+                <button class="homeBtn" style="--i:#f0b943;"  onclick="window.open('https://drive.google.com/file/d/1juEFcVDTreAP4N6risT6v5IzbD7hKNl3/view?usp=sharg')">Resume</button>
+            </div>
+            </div>
+           
+        </section>
+        
+   
+    </div>
+     
+    
+
+ <section id="projects" class="projects-section" style="margin-top: -150px; font-family: 'Poppins',sans-serif;"  >
+ 
+  <h1 class="section-title">Projects</h1>
+  <div class="projects-container">
+
+    <div class="project-card slide-in-left">
+      <h2>Healthcare Platform</h2>
+      <p>Built a full-stack app for health tracking, video consults, and hospital mapping using modern web tech.</p>
+      <a href="https://jayawd456.github.io/Solution-Challenge-2025-Vritra-/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card slide-in-right">
+      <h2>Weather App</h2>
+      <p>Real-time weather dashboard with live data using REST APIs, user input, and clean UI design.</p>
+      <a href="https://kride024.github.io/Weather-Application/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card slide-in-left">
+      <h2>Gradient Generator</h2>
+      <p>Interactive tool to preview, customize, and copy CSS gradients with real-time visual feedback.</p>
+      <a href="https://kride024.github.io/Background-Gradient-Generator/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card slide-in-right">
+      <h2>Website Clone</h2>
+      <p>Static website clone with animations and contact form, optimized for responsiveness and design.</p>
+      <a href="https://kride024.github.io/Final-Project-CSS/" target="_blank">View Project</a>
+    </div>
+
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <h2 class="me">Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">SEND MESSAGE</button>
+  </form>
+</section>
+
+<section id="connect" class="connect-section">
+  <h2 class="connect-heading">Connect with Me</h2>
+  <div class="connect-box">
+    <a href=" https://github.com/Kride024" target="_blank" class="connect-item">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" alt="GitHub">
+      <span>GitHub</span>
+    </a>
+    <a href="https://www.linkedin.com/in/kriti-yadav-22951b295" target="_blank" class="connect-item">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg" alt="LinkedIn">
+      <span>LinkedIn</span>
+    </a>
+    <a href="mailto:kritiyadavcoding@gmail.com" class="connect-item">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gmail.svg" alt="Email">
+      <span>Email</span>
+    </a>
+    <a href="https://www.youtube.com/@Vedo-e5b" target="_blank" class="connect-item">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/youtube.svg" alt="YouTube">
+      <span>YouTube</span>
+    </a>
+  </div>
+</section>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.style.animationPlayState = 'paused';
+      observer.observe(card);
+    });
+  });
+</script>
+</body>
+</html>
